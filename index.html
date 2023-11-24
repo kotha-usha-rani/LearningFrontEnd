@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/main.css">
+</head>
+<body>
+    <div class="overlay" id="overlay">
+        <h3>You are in...</h3>
+    </div>
+    <div class="hero-bg">
+        <section class="top">
+            <header>
+                <a href="#">minugu</a>
+                <header>
+                    <h1><span>LOOKING FOR</span> A MINUGU</h1>
+                    <p>Make your own light...</p>
+                    <div class="form-container">
+                        <form action="">
+                            <div class="form-left">
+                                <label for="email">Enter your email address</label>
+                                <input type="text" name="email">
+                                <p>Example: "minugu@gmail.com"</p>
+                            </div>
+                            <input type="button" value="Sign Up" id="cta-btn">
+                        </form>
+                    </div>
+                </header>
+            </header>
+        </section>
+    </div>
+    <section class="authentic">
+        <div class="right-col">
+            <h2>My work aims at </h2>
+            <p>bringing to you the colors and beauty in Indian rich heritage. My art shows reality of liviving a cultural life in Indian. Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
+        </div>
+            <img src="images/image1.jpg" alt="Diwali">
+    </section>
+
+    <script>
+        let btn = document.getElementById('cta-btn');
+        let overlay = document.getElementById('overlay');
+        btn.addEventListener('click', () => {
+            overlay.style.display = 'grid';
+            overlay.classList.add('animate-overlay')
+        })
+    </script>
+</body>
+</html>
